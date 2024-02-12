@@ -1,0 +1,209 @@
+/* 
+• En su mayoria los colores son definidos por el tema.
+• El tema se encuentra en el archivo index.css
+*/
+
+
+
+.bannerHome {
+    width: 100%;
+    height: 100vh;
+}
+
+.bannerHome .stack1{
+    width: 100%;
+    height: 100%;
+}
+
+.bannerHome .stack1 .section1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5em;
+}
+
+
+.bannerHome .stack1 .section1 .titulo .container h1{
+    font-size: 3em;
+    font-weight: 900;
+    text-shadow: 0 0 0.4em rgba(255, 255, 255, 0.5);
+    color: var(--text-color1);
+}
+
+.bannerHome .stack1 .section1 .descrption .container p{
+    font-size: large;
+    color: var(--text-color1);
+}
+
+.bannerHome .stack1 .section1 .button .container button{
+    border-radius: 5em;
+    font-size: larger;
+    font-weight: 600;
+    padding: 1em;
+    color: var(--color-1);
+    filter: contrast(1.8);
+    background: var(--bg-boton-color1);
+}
+
+.bannerHome .stack1 .section1 .button .container button svg{
+    font-size: larger;
+    color: var(--color-1);
+}
+
+
+
+
+
+.bannerHome .stack1 .section2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannerHome .stack1 .section2 .s2Cards{
+    width: 30vw;
+    height: 40vw;
+    position: relative;
+}
+
+.bannerHome .stack1 .section2 .s2Cards .conatiner1{
+    width: 75%;
+    height: 90%;
+    top: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    transform: translate(0,-100%);
+    border-radius: 3em;
+    box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    animation: moving 20s ease-in-out infinite;
+}
+
+.bannerHome .stack1 .section2 .s2Cards .conatiner1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bannerHome .stack1 .section2 .s2Cards .conatiner2{
+    width: 80%;
+    height: 100%;
+    top: 0%;
+    left: 100%;
+    overflow: hidden;
+    position: absolute;
+    transform: translate(-100%,-0%);
+    border-radius: 3em;
+    z-index: 9;
+}
+
+.bannerHome .stack1 .section2 .s2Cards .conatiner2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bannerHome .stack1 .section2 .s2Cards .conatiner3{
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    filter: blur(100em);
+    opacity: 0.7;
+    z-index: 8;
+    animation: rotating 20s ease-in-out infinite alternate;
+}
+
+.bannerHome .stack1 .section2 .s2Cards .conatiner3 div{
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(var(--color-morado1), var(--color-morado9));
+}
+
+
+@keyframes moving {
+    0% {
+        top: 100%;
+        left: 0;
+        transform: translate(0,-100%);
+    }
+    15% {
+        top: 95%;
+        left: 2%;
+    } 
+    30% {
+        top: 92%;
+        left: 1%;
+    }
+    45% {
+        top: 91%;
+        left: 3%;
+    }
+    50% {
+        top: 90%;
+        left: 2%;
+    } 
+    55% {
+        top: 92%;
+        left: 1%;
+    }
+    60% {
+        top: 94%;
+        left: 4%;
+    }
+    65% {
+        top: 93%;
+        left: 2%;
+    }
+    70% {
+        top: 92%;
+        left: 3%;
+    }
+    75% {
+        top: 91%;
+        left: 2%;
+    }
+    80% {
+        top: 90%;
+        left: 1%;
+    }
+    85% {
+        top: 92%;
+        left: 4%;
+    }
+    90% {
+        top: 94%;
+        left: 2%;
+    }
+    95% {
+        top: 93%;
+        left: 3%;
+    }
+    100% {
+        top: 100%;
+        left: 0;
+    }
+}
+
+@keyframes rotating {
+    0% {
+        height: 80%;
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    50% {
+        height: 40%;
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+    100% {
+        height: 80%;
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+}
