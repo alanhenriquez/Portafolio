@@ -283,7 +283,12 @@ body {
     --border2: 1px solid var(--border-color2);
   }
 
+
+
+  /* DEFAULT THEME BY SCHEME ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
   
+
+
   body {
     background: var(--bg-light-special3);
   }
@@ -356,6 +361,30 @@ body {
   }
 
 
+
+  /* VARIANTS SPECIFICS •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+
+
+
+  /* buttons variants*/
+  .theme-light .on .btv1 > button {
+    width: auto;
+    height: auto;
+    color: var(--color-1);
+    border-radius: 0.5vw;
+    padding: 1em 1.5em;
+    transform: scale(1);
+    background: var(--bg-dark-special3);
+    transition: 0.2s;
+  }
+
+  .theme-light .on .btv1 > button:active {
+    transform: scale(0.95);
+    transition: 0.2s;
+  }
+
+
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -377,6 +406,12 @@ body {
     --border1: 1px solid var(--border-color2);
     --border2: 1px solid var(--color-1);
   }
+
+  
+
+  /* DEFAULT THEME BY SCHEME ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+
+
   
   body {
     background: var(--bg-dark-special5);
@@ -449,6 +484,28 @@ body {
     color: var(--text-active-color3);
   }
 
+
+  
+  /* VARIANTS SPECIFICS •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••*/
+
+
+
+  /* buttons variants*/
+  .theme-dark .on .btv1 > button {
+    width: auto;
+    height: auto;
+    color: var(--color-0);
+    border-radius: 0.5vw;
+    padding: 1em 1.5em;
+    transform: scale(1);
+    background: var(--bg-light-special3);
+    transition: 0.2s;
+  }
+
+  .theme-dark .on .btv1 > button:active {
+    transform: scale(0.95);
+    transition: 0.2s;
+  }
 
 }
 

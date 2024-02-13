@@ -20,8 +20,10 @@ const env = {
             active3: 'active3',
         }
     },
-    appStrings: {
-        
+    appAccess: {
+        img: {
+            userImg: '/src/images/IMG_20221227_172311120.jpg',
+        }
     }
 }
 

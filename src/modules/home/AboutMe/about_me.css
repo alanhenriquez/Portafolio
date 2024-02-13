@@ -1,0 +1,59 @@
+
+
+
+
+.aboutMeHome {
+    width: 100%;
+    height: 100vh;
+}
+
+.aboutMeHome .grid1{
+    width: 100%;
+    height: 100%;
+}
+
+.aboutMeHome .grid1 .section1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5em;
+}
+
+.aboutMeHome .grid1 .section1 .saludo .container h2{
+    font-size: 1.8em;
+    font-weight: 600;
+    color: var(--text-color1);
+    text-shadow: 0 0 0.4em rgba(255, 255, 255, 0.5);
+}
+
+.aboutMeHome .grid1 .section1 .mensaje .container h2{
+    font-size: 3em;
+    font-weight: 900;
+    color: var(--text-color1);
+    text-shadow: 0 0 0.4em rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+.aboutMeHome .grid1 .section2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0em 5em;
+}
+
+.aboutMeHome .grid1 .section2 .infoPersonal .container h4 {
+    width: 100%;
+    height: 100%;
+    font-weight: 100;
+    font-size: large;
+    color: var(--text-color1);
+}
+
+

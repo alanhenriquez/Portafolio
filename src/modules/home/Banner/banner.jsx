@@ -1,7 +1,7 @@
 
 import { Button, Stack } from '@mui/material';
 import './banner.css';
-import { Insights, Shortcut, SouthEast } from '@mui/icons-material';
+import { SouthEast } from '@mui/icons-material';
 
 
 
@@ -12,7 +12,7 @@ const BANNER = ({ }) => {
 
     return (
         <>
-            <div className="bannerHome">
+            <div id='home' className="bannerHome">
                 <Stack className='stack1' direction={'row'} spacing={0}>
                     <div className="section1">
                         <Stack direction={'column'} spacing={12}>

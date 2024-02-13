@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import env from './config/env';
 import funcs from './config/funcs';
-import HOME from './pages/home';
+import HOME from './pages/home/home';
+
 
 
 function App() {
@@ -41,7 +42,7 @@ function App() {
   //ZONE: EFFECTS -------------------------------------------------------------------------------
   ///////////////////////////////////////////////////////////////////////////////////////////////
 
-
+  
 
   useEffect(() => {
     setWindowTheme(funcs.global.detectTheme());
@@ -62,5 +63,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App
