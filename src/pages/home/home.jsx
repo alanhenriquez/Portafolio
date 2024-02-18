@@ -13,7 +13,7 @@ const HOME = ({ }) => {
 
     return (
         <>
-            <div className="sectionsHome on">
+            <div className="sectionsHome">
                 <HEADER></HEADER>
                 <BANNER></BANNER>
                 <ABOUT_ME></ABOUT_ME>

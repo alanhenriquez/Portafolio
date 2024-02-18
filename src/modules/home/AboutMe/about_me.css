@@ -18,21 +18,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 5em;
-}
-
-.aboutMeHome .grid1 .section1 .saludo .container h2{
-    font-size: 1.8em;
-    font-weight: 600;
-    color: var(--text-color1);
-    text-shadow: 0 0 0.4em rgba(255, 255, 255, 0.5);
-}
-
-.aboutMeHome .grid1 .section1 .mensaje .container h2{
-    font-size: 3em;
-    font-weight: 900;
-    color: var(--text-color1);
-    text-shadow: 0 0 0.4em rgba(255, 255, 255, 0.5);
 }
 
 
@@ -45,7 +30,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0em 5em;
 }
 
 .aboutMeHome .grid1 .section2 .infoPersonal .container h4 {
@@ -53,6 +37,7 @@
     height: 100%;
     font-weight: 100;
     font-size: large;
+    text-align: justify;
     color: var(--text-color1);
 }
 

@@ -49,6 +49,15 @@ function App() {
     funcs.clock.doEvery(() => { setWindowTheme(funcs.global.detectTheme()) }, 1000);
   }, []);
 
+  useEffect(() => {
+    const body = document.body;
+    const themeClass = handleSetThemeApp();
+    if (themeClass) {
+      body.classList.remove(env.themes.a, env.themes.b);
+      body.classList.add(themeClass);
+    }
+  }, [WindowTheme]);
+
 
 
   ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -58,7 +67,7 @@ function App() {
 
 
   return (
-    <div className={handleSetThemeApp()}>
+    <div>
       <HOME></HOME>
     </div>
   );

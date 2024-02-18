@@ -1,5 +1,6 @@
 import { Button, Grid } from '@mui/material';
 import './about_me.css';
+import env from '../../../config/env';
 
 
 const ABOUT_ME = ({ }) => {
@@ -16,14 +17,14 @@ const ABOUT_ME = ({ }) => {
                                 <Grid container spacing={5} xs={12}>
                                     <Grid item xs={12}>
                                         <div className="saludo">
-                                            <div className="container">
+                                            <div className={"container " + env.styles.variants.text.a}>
                                                 <h2>¿QUIEN SOY?</h2>
                                             </div>
                                         </div>
                                     </Grid>
                                     <Grid item xs={12}>
                                         <div className="mensaje">
-                                            <div className="container">
+                                            <div className={"container " + env.styles.variants.text.b}>
                                                 <h2>Pasión por perfección.</h2>
                                             </div>
                                         </div>
@@ -45,7 +46,7 @@ const ABOUT_ME = ({ }) => {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <div className="boton">
-                                            <div className="container btv1">
+                                            <div className={"container " + env.styles.variants.buttons.a}>
                                                 <Button
                                                     variant="contained"
                                                     disableElevation

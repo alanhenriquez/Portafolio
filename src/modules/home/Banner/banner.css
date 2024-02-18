@@ -10,34 +10,33 @@
     height: 100vh;
 }
 
-.bannerHome .stack1{
+.bannerHome .grid1{
     width: 100%;
     height: 100%;
 }
 
-.bannerHome .stack1 .section1 {
-    width: 50%;
+.bannerHome .grid1 .section1 {
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 5em;
 }
 
 
-.bannerHome .stack1 .section1 .titulo .container h1{
+.bannerHome .grid1 .section1 .titulo .container h1{
     font-size: 3em;
     font-weight: 900;
     text-shadow: 0 0 0.4em rgba(255, 255, 255, 0.5);
     color: var(--text-color1);
 }
 
-.bannerHome .stack1 .section1 .descrption .container p{
+.bannerHome .grid1 .section1 .descrption .container p{
     font-size: large;
     color: var(--text-color1);
 }
 
-.bannerHome .stack1 .section1 .button .container button{
+.bannerHome .grid1 .section1 .button .container button{
     border-radius: 5em;
     font-size: larger;
     font-weight: 600;
@@ -47,7 +46,7 @@
     background: var(--bg-boton-color1);
 }
 
-.bannerHome .stack1 .section1 .button .container button svg{
+.bannerHome .grid1 .section1 .button .container button svg{
     font-size: larger;
     color: var(--color-1);
 }
@@ -56,43 +55,45 @@
 
 
 
-.bannerHome .stack1 .section2 {
-    width: 50%;
+.bannerHome .grid1 .section2 {
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.bannerHome .stack1 .section2 .s2Cards{
+.bannerHome .grid1 .section2 .s2Cards{
     width: 30vw;
     height: 40vw;
     position: relative;
 }
 
-.bannerHome .stack1 .section2 .s2Cards .conatiner1{
+.bannerHome .grid1 .section2 .s2Cards .conatiner1{
     width: 75%;
-    height: 90%;
+    height: 85%;
     top: 100%;
     left: 0;
     overflow: hidden;
     position: absolute;
     transform: translate(0,-100%);
-    border-radius: 3em;
-    box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.6);
+    border-radius: 2.5em;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5em rgba(0, 0, 0, 0.8);
     z-index: 10;
-    animation: moving 20s ease-in-out infinite;
+    animation: moving 30s ease-in-out infinite;
 }
 
-.bannerHome .stack1 .section2 .s2Cards .conatiner1 img{
+.bannerHome .grid1 .section2 .s2Cards .conatiner1 img{
     width: 100%;
     height: 100%;
+    background: gray;
     object-fit: cover;
 }
 
-.bannerHome .stack1 .section2 .s2Cards .conatiner2{
+.bannerHome .grid1 .section2 .s2Cards .conatiner2{
     width: 80%;
-    height: 100%;
+    height: 90%;
     top: 0%;
     left: 100%;
     overflow: hidden;
@@ -102,14 +103,14 @@
     z-index: 9;
 }
 
-.bannerHome .stack1 .section2 .s2Cards .conatiner2 img{
+.bannerHome .grid1 .section2 .s2Cards .conatiner2 img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.bannerHome .stack1 .section2 .s2Cards .conatiner3{
-    width: 80%;
+.bannerHome .grid1 .section2 .s2Cards .conatiner3{
+    width: 90%;
     height: 80%;
     top: 50%;
     left: 50%;
@@ -119,10 +120,10 @@
     filter: blur(100em);
     opacity: 0.7;
     z-index: 8;
-    animation: rotating 20s ease-in-out infinite alternate;
+    animation: rotating 30s ease-in-out infinite alternate;
 }
 
-.bannerHome .stack1 .section2 .s2Cards .conatiner3 div{
+.bannerHome .grid1 .section2 .s2Cards .conatiner3 div{
     width: 100%;
     height: 100%;
     background: radial-gradient(var(--color-morado1), var(--color-morado9));
@@ -133,81 +134,71 @@
     0% {
         top: 100%;
         left: 0;
-        transform: translate(0,-100%);
-        box-shadow: 0 0 0em rgba(0, 0, 0, 0.6);
+        transform: translate(-0,-100%);
+        box-shadow: 0 0 5em rgba(0, 0, 0, 0.8);
     }
     15% {
         top: 95%;
         left: 2%;
+        transform: translate(-2,-95%);
         box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.6);
     } 
     30% {
         top: 92%;
         left: 1%;
-        box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.6);
+        transform: translate(-1,-92%);
     }
     45% {
         top: 91%;
         left: 3%;
-        box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.6);
+        transform: translate(-3,-91%);
     }
-    50% {
-        top: 90%;
+    50% {/* 50%: SOSPECHOSO DE ERROR */
+        top: 100%;
         left: 2%;
-        transform: translate(2%, -90%);
+        transform: translate(-2%,-100%);
         box-shadow: 0 0 3em rgba(0, 0, 0, 0.8);
     } 
     55% {
         top: 92%;
         left: 1%;
-        box-shadow: 0 0 3em rgba(0, 0, 0, 0.8);
+        transform: translate(-1,-92%);
     }
     60% {
         top: 94%;
         left: 4%;
-        box-shadow: 0 0 3em rgba(0, 0, 0, 0.8);
-    }
-    65% {
-        top: 93%;
-        left: 2%;
-        box-shadow: 0 0 3em rgba(0, 0, 0, 0.8);
+        transform: translate(-4,-94%);
     }
     70% {
         top: 92%;
         left: 3%;
-        box-shadow: 0 0 3em rgba(0, 0, 0, 0.8);
-    }
-    75% {
-        top: 91%;
-        left: 2%;
-        box-shadow: 0 0 3em rgba(0, 0, 0, 0.8);
+        transform: translate(-3%,-92%);
     }
     80% {
         top: 90%;
         left: 1%;
-        transform: translate(1%, -90%);
-        box-shadow: 0 0 3em rgba(0, 0, 0, 0.8);
+        transform: translate(-1%, -90%);
     }
     85% {
         top: 92%;
         left: 4%;
-        box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.6);
+        transform: translate(-4%,-92%);
     }
     90% {
         top: 94%;
         left: 2%;
-        box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.6);
+        transform: translate(-2%,-94%);
     }
     95% {
         top: 93%;
         left: 3%;
-        box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.6);
+        transform: translate(-0,-93%);
     }
     100% {
         top: 100%;
         left: 0;
-        transform: translate(0,-100%);
-        box-shadow: 0 0 0em rgba(0, 0, 0, 0.6);
+        transform: translate(-0%,-100%);
+        box-shadow: 0 0 5em rgba(0, 0, 0, 0.6);
     }
 }
 

@@ -1,0 +1,13 @@
+/* PARA ESTE COMPONENTE ES REQUERIDO LA INSTALACION DE MATERIAL UI, INCLUYENDO LOS ICONOS */
+
+
+
+
+.MuiPopover-paper {
+    background-color: var(--bg-color3) !important;
+    color: var(--text-color1) !important;
+}
+
+.MuiPopover-paper svg {
+    color: var(--text-color1) !important;
+}

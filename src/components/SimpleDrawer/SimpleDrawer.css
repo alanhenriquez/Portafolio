@@ -1,0 +1,14 @@
+/* PARA ESTE COMPONENTE ES REQUERIDO LA INSTALACION DE MATERIAL UI, INCLUYENDO LOS ICONOS */
+
+
+
+/* estilos para el drawer */
+
+.simpple-drawer .MuiDrawer-paper {
+    background: var(--bg-color3);
+}
+
+.simpple-drawer .MuiAccordion-root {
+    background: inherit;
+}
+
