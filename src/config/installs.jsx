@@ -26,6 +26,7 @@ const installs = {
         react_dnd: 'npm install react-dnd react-dnd-html5-backend',
         swiper: 'npm install swiper',
         chart_js: 'npm install chart.js',
+        prop_types: 'npm install --save prop-types',
     },
     react_ui_frameworks: {
         material_ui: {

@@ -1,3 +1,4 @@
+import PreviewPDF  from '../../components/PreviewPDF/PreviewPDF';
 import ABOUT_ME from '../../modules/home/AboutMe/about_me';
 import BANNER from '../../modules/home/Banner/banner';
 import HEADER from '../../modules/home/Header/header';

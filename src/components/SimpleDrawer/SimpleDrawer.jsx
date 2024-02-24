@@ -95,7 +95,26 @@ import './SimpleDrawer.css';
  * 
  * 
  * @version 1.0
+ * 
+ * 
  * @note No se aceptal actualmente elementos anidados superior a primera anidacion
+ * 
+ * 
+ * @throws {Error} Si las props no cumplen con las validaciones requeridas:
+ *   - Si 'anchorDirection' no es una de las opciones disponibles: 'top', 'right', 'bottom', 'left'
+ *   - Si 'menuItems' no es un array.
+ *   - Si algún elemento de 'menuItems' no es un objeto.
+ *   - Si 'label' de algún elemento de 'menuItems' no es una cadena no vacía.
+ *   - Si 'onClick' de algún elemento de 'menuItems' no es una función.
+ *   - Si 'icon' de algún elemento de 'menuItems' no es un objeto React.
+ *   - Si 'children' de algún elemento de 'menuItems' no es un array (si se proporciona).
+ *   - Si algún elemento de 'menuItems.children' no es un objeto.
+ *   - Si 'label' de algún elemento de 'menuItems.children' no es una cadena no vacía.
+ *   - Si 'onClick' de algún elemento de 'menuItems.children' no es una función.
+ *   - Si 'icon' de algún elemento de 'menuItems.children' no es un objeto React.
+ *   - Si 'iconText' de algún elemento de 'menuItems.children' no es una cadena.
+ *   - Si 'renderActivator' no es una función.
+ * 
  * 
  * 
  */
@@ -117,44 +136,44 @@ const SimpleDrawer = ({
   React.useEffect(() => {
     // Validación de anchorDirection
     if (!['top', 'right', 'bottom', 'left'].includes(anchorDirection)) {
-      console.error("Error: 'anchorDirection' prop debe ser una de las siguientes opciones: 'top', 'right', 'bottom', 'left'");
+      throw new Error("Error: 'anchorDirection' prop debe ser una de las siguientes opciones: 'top', 'right', 'bottom', 'left'");
     }
   
     // Validación de menuItems
     if (!Array.isArray(menuItems)) {
-      console.error("Error: 'menuItems' prop debe ser un array.");
+      throw new Error("Error: 'menuItems' prop debe ser un array.");
     } else {
       menuItems.forEach((item, index) => {
         if (!item || typeof item !== 'object') {
-          console.error(`Error en 'menuItems[${index}]': el elemento debe ser un objeto.`);
+          throw new Error(`Error en 'menuItems[${index}]': el elemento debe ser un objeto.`);
         } else {
           if (!item.label || typeof item.label !== 'string') {
-            console.error(`Error en 'menuItems[${index}]': la propiedad 'label' debe ser una cadena no vacía.`);
+            throw new Error(`Error en 'menuItems[${index}]': la propiedad 'label' debe ser una cadena no vacía.`);
           }
-          if (!item.onClick || typeof item.onClick !== 'function') {
-            console.error(`Error en 'menuItems[${index}]': la propiedad 'onClick' debe ser una función.`);
+          if (item.onClick && typeof item.onClick !== 'function') {
+            throw new Error(`Error en 'menuItems[${index}]': la propiedad 'onClick' debe ser una función.`);
           }
           if (item.icon && typeof item.icon !== 'object') {
-            console.error(`Error en 'menuItems[${index}]': la propiedad 'icon' debe ser un objeto React.`);
+            throw new Error(`Error en 'menuItems[${index}]': la propiedad 'icon' debe ser un objeto React.`);
           }
           if (item.children && !Array.isArray(item.children)) {
-            console.error(`Error en 'menuItems[${index}]': si se proporciona, 'children' debe ser un array.`);
+            throw new Error(`Error en 'menuItems[${index}]': si se proporciona, 'children' debe ser un array.`);
           } else if (item.children) {
             item.children.forEach((child, childIndex) => {
               if (!child || typeof child !== 'object') {
-                console.error(`Error en 'menuItems[${index}].children[${childIndex}]': el elemento debe ser un objeto.`);
+                throw new Error(`Error en 'menuItems[${index}].children[${childIndex}]': el elemento debe ser un objeto.`);
               } else {
                 if (!child.label || typeof child.label !== 'string') {
-                  console.error(`Error en 'menuItems[${index}].children[${childIndex}]': la propiedad 'label' debe ser una cadena no vacía.`);
+                  throw new Error(`Error en 'menuItems[${index}].children[${childIndex}]': la propiedad 'label' debe ser una cadena no vacía.`);
                 }
                 if (!child.onClick || typeof child.onClick !== 'function') {
-                  console.error(`Error en 'menuItems[${index}].children[${childIndex}]': la propiedad 'onClick' debe ser una función.`);
+                  throw new Error(`Error en 'menuItems[${index}].children[${childIndex}]': la propiedad 'onClick' debe ser una función.`);
                 }
                 if (child.icon && typeof child.icon !== 'object') {
-                  console.error(`Error en 'menuItems[${index}].children[${childIndex}]': la propiedad 'icon' debe ser un objeto React.`);
+                  throw new Error(`Error en 'menuItems[${index}].children[${childIndex}]': la propiedad 'icon' debe ser un objeto React.`);
                 }
                 if (child.iconText && typeof child.iconText !== 'string') {
-                  console.error(`Error en 'menuItems[${index}].children[${childIndex}]': la propiedad 'iconText' debe ser una cadena.`);
+                  throw new Error(`Error en 'menuItems[${index}].children[${childIndex}]': la propiedad 'iconText' debe ser una cadena.`);
                 }
               }
             });
@@ -165,7 +184,7 @@ const SimpleDrawer = ({
   
     // Validación de renderActivator
     if (typeof renderActivator !== 'function') {
-      console.error("Error: 'renderActivator' prop debe ser una función.");
+      throw new Error("Error: 'renderActivator' prop debe ser una función.");
     }
   }, [anchorDirection, menuItems, renderActivator]);
   
@@ -178,6 +197,7 @@ const SimpleDrawer = ({
 
 
   const [drawerWidth, setDrawerWidth] = React.useState(250); // Inicializar con el ancho mínimo deseado
+  const [MenuItems, setMenuItems] = React.useState(menuItems); // Inicializar con el ancho mínimo deseado
   const [state, setState] = React.useState({
     [anchorDirection]: false,
   });
@@ -205,6 +225,11 @@ const SimpleDrawer = ({
   };
 
 
+  React.useEffect(() => {
+    setMenuItems(menuItems);
+  }, [MenuItems]);
+  
+
   
   /*/////////////////////////////////////////////////////////////////////////////////////////////*/
   /* RETURNS ------------------------------------------------------------------------------------*/
@@ -225,7 +250,7 @@ const SimpleDrawer = ({
     >
       <List>
         <Grid container xs={12} rowSpacing={2}>
-          {menuItems.map((item, index) => (
+          {MenuItems.map((item, index) => (
             <>
               <Grid item xs={12}>
                 <React.Fragment key={index}>

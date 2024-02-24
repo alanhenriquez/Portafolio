@@ -3,6 +3,7 @@ import './App.css'
 import env from './config/env';
 import funcs from './config/funcs';
 import HOME from './pages/home/home';
+import useTranslation from './hooks/useTranslation';
 
 
 
@@ -43,7 +44,7 @@ function App() {
   ///////////////////////////////////////////////////////////////////////////////////////////////
 
   
-
+  
   useEffect(() => {
     setWindowTheme(funcs.global.detectTheme());
     funcs.clock.doEvery(() => { setWindowTheme(funcs.global.detectTheme()) }, 1000);

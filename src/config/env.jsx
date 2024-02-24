@@ -5,10 +5,6 @@ Este archivo almacena variables de entorno utilizadas a lo largo del proyecto.
     archivo index.css
  */
 
-import EN from "./langs/en";
-import ES from "./langs/es";
-
-
 
 
 
@@ -37,8 +33,33 @@ const env = {
     },
     appAccess: {
         strings: {
-            es: ES,
-            en: EN,
+            anchorMenu: [
+                {
+                    key: '1',
+                    href: '#home',
+                    title: 'INICIO',
+                },
+                {
+                    key: '2',
+                    href: '#about',
+                    title: 'SOBRE MÍ',
+                },
+                {
+                    key: '3',
+                    href: '#proyects',
+                    title: 'PROYECTOS',
+                },
+                {
+                    key: '4',
+                    href: '#',
+                    title: 'INTERESES',
+                },
+                {
+                    key: '5',
+                    href: '#',
+                    title: 'CONTACTO',
+                },
+            ],
         },
         img: {
             userImg: '/src/images/IMG_20221227_172311120.jpg',
