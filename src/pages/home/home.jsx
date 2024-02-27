@@ -1,10 +1,9 @@
-import PreviewPDF  from '../../components/PreviewPDF/PreviewPDF';
 import ABOUT_ME from '../../modules/home/AboutMe/about_me';
 import BANNER from '../../modules/home/Banner/banner';
+import FOOTER from '../../modules/home/Footer/footer';
 import HEADER from '../../modules/home/Header/header';
 import PROYECTS from '../../modules/home/Proyects/proyects';
 import './home.css';
-
 
 
 
@@ -20,6 +19,7 @@ const HOME = ({ }) => {
                 <ABOUT_ME></ABOUT_ME>
                 <PROYECTS></PROYECTS>
             </div>
+                <FOOTER></FOOTER>
         </>
     )
 }

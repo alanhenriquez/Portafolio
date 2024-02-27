@@ -16,14 +16,14 @@ const PROYECTS = ({ }) => {
             <div id='proyects' className="proyectsHome">
                 <div className="pyContainer">
                     <Grid container className="grid1" spacing={0} xs={12}>
-                        <Grid item xs={6}>
+                        <Grid item xs={12} md={12 /2} order={2}>
                             <div className="section2">
                                 <div className="containerImages">
                                     <StandardImageList cols={3} data={env.appAccess.img.prWeb}></StandardImageList>
                                 </div>
                             </div>
                         </Grid>
-                        <Grid item xs={6}>
+                        <Grid item xs={12} md={12 /2} order={1}>
                             <div className="section1">
                                 <Grid container spacing={5} xs={12}>
                                     <Grid item xs={12}>

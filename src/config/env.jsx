@@ -56,7 +56,7 @@ const env = {
                 },
                 {
                     key: '5',
-                    href: '#',
+                    href: '#footer',
                     title: 'CONTACTO',
                 },
             ],

@@ -36,9 +36,13 @@
     width: 100%;
     height: 100%;
     font-weight: 100;
-    font-size: large;
+    font-size: 1.5vw;
     text-align: justify;
     color: var(--text-color1);
+}
+
+.aboutMeHome .grid1 .section2 .boton .container button {
+    font-size: 1vw;
 }
 
 

@@ -49,10 +49,55 @@ const langs = [
       en: 'CONTACT'
     },
     {
-      key: 9,
+      key: 10,
       es: '¿QUIEN SOY?',
       en: 'WHO I AM?'
     },
+    {
+      key: 11,
+      es: 'Español',
+      en: 'Spanish'
+    },
+    {
+      key: 12,
+      es: 'Inglés',
+      en: 'English'
+    },
+    {
+      key: 13,
+      es: 'Pasión por perfección.',
+      en: 'Passion for perfection.'
+    },
+    {
+      key: 14,
+      es: 'Mi enfoque se centra en fusionar diseño y programación para crear experiencias digitales impactantes. Con dominio en front-end y bases de datos SQL y NoSQL, estoy constantemente explorando nuevas técnicas para potenciar mis habilidades. ¡Unamos fuerzas para dar vida a tu visión digital!',
+      en: "My approach focuses on fusing design and programming to create impactful digital experiences. Proficient in front-end and SQL and NoSQL databases, I am constantly exploring new techniques to enhance my skills. Let's join forces to bring your digital vision to life!"
+    },
+    {
+      key: 15,
+      es: "MIRA LO QUE HE HECHO",
+      en: "LOOK WHAT I'VE DONE"
+    },
+    {
+      key: 16,
+      es: "Visualizar",
+      en: "Preview"
+    },
+    {
+      key: 17,
+      es: "¡MIRA!",
+      en: "LOOK!"
+    },
+    {
+      key: 18,
+      es: "Algunos de mis proyectos.",
+      en: "Some of my projects."
+  },
+  {
+    key: 19,
+    es: "REDES SOCIALES",
+    en: "SOCIAL MEDIA"
+  },
 ]
 
 export default langs;

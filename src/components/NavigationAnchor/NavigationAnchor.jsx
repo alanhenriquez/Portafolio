@@ -60,20 +60,20 @@ const NavigationAnchor = ({
 
     return (
         <div className={className}>
-        <Anchor
-            affix={affix}
-            bounds={bounds}
-            getContainer={getContainer}
-            getCurrentAnchor={getCurrentAnchor}
-            offsetTop={offsetTop}
-            showInkInFixed={showInkInFixed}
-            targetOffset={targetOffset}
-            onChange={onChange}
-            onClick={onClick}
-            items={items}
-            direction={direction}
-            replace={replace}
-        />
+            <Anchor
+                affix={affix}
+                bounds={bounds}
+                getContainer={getContainer}
+                getCurrentAnchor={getCurrentAnchor}
+                offsetTop={offsetTop}
+                showInkInFixed={showInkInFixed}
+                targetOffset={targetOffset}
+                onChange={onChange}
+                onClick={onClick}
+                items={items}
+                direction={direction}
+                replace={replace}
+            />
         </div>
     );
 };

@@ -25,29 +25,29 @@
 
 
 .bannerHome .grid1 .section1 .titulo .container h1{
-    font-size: 3em;
+    font-size: 4vw;
     font-weight: 900;
-    text-shadow: 0 0 0.4em rgba(255, 255, 255, 0.5);
+    text-shadow: 0 0 0.6vw rgba(255, 255, 255, 0.5);
     color: var(--text-color1);
 }
 
 .bannerHome .grid1 .section1 .descrption .container p{
-    font-size: large;
+    font-size: 1.25vw;
     color: var(--text-color1);
 }
 
 .bannerHome .grid1 .section1 .button .container button{
-    border-radius: 5em;
-    font-size: larger;
+    border-radius: 5vw;
+    font-size: 1.5vw;
     font-weight: 600;
-    padding: 1em;
+    padding: 1.5vw;
     color: var(--color-1);
-    filter: contrast(1.8);
+    filter: contrast(2);
     background: var(--bg-boton-color1);
 }
 
 .bannerHome .grid1 .section1 .button .container button svg{
-    font-size: larger;
+    font-size: 2vw;
     color: var(--color-1);
 }
 
@@ -77,9 +77,8 @@
     overflow: hidden;
     position: absolute;
     transform: translate(0,-100%);
-    border-radius: 2.5em;
-    border: 2px solid #fff;
-    box-shadow: 0 0 5em rgba(0, 0, 0, 0.8);
+    border-radius: 2.5vw;
+    border: 0.15vw solid #fff;
     z-index: 10;
     animation: moving 30s ease-in-out infinite;
 }
@@ -99,7 +98,8 @@
     overflow: hidden;
     position: absolute;
     transform: translate(-100%,-0%);
-    border-radius: 3em;
+    box-shadow: 0 0 5vw rgba(0, 0, 0, 0.8);
+    border-radius: 2.5vw;
     z-index: 9;
 }
 
@@ -117,7 +117,7 @@
     overflow: hidden;
     position: absolute;
     transform: translate(-50%,-50%);
-    filter: blur(100em);
+    filter: blur(100vw);
     opacity: 0.7;
     z-index: 8;
     animation: rotating 30s ease-in-out infinite alternate;
@@ -135,13 +135,13 @@
         top: 100%;
         left: 0;
         transform: translate(-0,-100%);
-        box-shadow: 0 0 5em rgba(0, 0, 0, 0.8);
+        
     }
     15% {
         top: 95%;
         left: 2%;
         transform: translate(-2,-95%);
-        box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.6);
+        
     } 
     30% {
         top: 92%;
@@ -157,7 +157,7 @@
         top: 100%;
         left: 2%;
         transform: translate(-2%,-100%);
-        box-shadow: 0 0 3em rgba(0, 0, 0, 0.8);
+        
     } 
     55% {
         top: 92%;
@@ -198,7 +198,7 @@
         top: 100%;
         left: 0;
         transform: translate(-0%,-100%);
-        box-shadow: 0 0 5em rgba(0, 0, 0, 0.6);
+        
     }
 }
 

@@ -1,0 +1,227 @@
+
+
+
+
+.footerHome {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.footerHome .grid1{
+    width: 100%;
+    height: 100%;
+}
+
+.footerHome .grid1 .section1 {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerHome .grid1 .section2 {
+    width: 100%;
+    height: auto;
+    min-height: 50vh;
+    position: relative;
+    display: inline-block;
+    border-top: var(--border1);
+    border-width: 0.1vw;
+    box-shadow: 0 0 1vw rgba(34, 189, 255, 0.2);
+}
+
+.footerHome .grid1 .section2 .logo{
+    width: 100%;
+    height: auto;
+}
+
+.footerHome .grid1 .section2 .logo .imagen{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.footerHome .grid1 .section2 .logo .imagen .conatiner{
+    width: 40%;
+    height: 40%;
+}
+
+.footerHome .grid1 .section2 .logo .imagen .conatiner img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+.footerHome .grid1 .section2 .info{
+    width: 100%;
+    height: 100%;
+    padding-top: 3vw;
+}
+
+
+.footerHome .grid1 .section2 .info .contactos{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1vw;
+}
+
+.footerHome .grid1 .section2 .info .contactos .title{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.footerHome .grid1 .section2 .info .contactos .title .text{
+    width: 100%;
+    height: auto;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5vw;
+}
+
+.footerHome .grid1 .section2 .info .contactos .title .text p{
+    width: 100%;
+    height: auto;
+    font-size: 1.1vw;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.footerHome .grid1 .section2 .info .contactos .title .deco{
+    width: 100%;
+    height: 50%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+.footerHome .grid1 .section2 .info .contactos .title .deco span{
+    width: 70%;
+    height: 0.5vw;
+    border-radius: 5vw;
+    background: linear-gradient(to right, #e70590, #0786e1);
+}
+
+
+.footerHome .grid1 .section2 .info .contactos .conatiner{
+    width: 100%;
+    height: 80%;
+}
+
+.footerHome .grid1 .section2 .info .contactos .conatiner .cardContacto{
+    width: 100%;
+    height: 4vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.footerHome .grid1 .section2 .info .contactos .conatiner .cardContacto .icon,
+.footerHome .grid1 .section2 .info .contactos .conatiner .cardContacto .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerHome .grid1 .section2 .info .contactos .conatiner .cardContacto .icon svg {
+    font-size: 1.2vw;
+}
+
+.footerHome .grid1 .section2 .info .contactos .conatiner .cardContacto .text{
+    font-size: 0.9vw;
+}
+
+
+
+
+
+
+
+
+
+
+.footerHome .grid1 .section2 .info .social{
+    width: 100%;
+    height: auto;
+}
+
+
+.footerHome .grid1 .section2 .info .social .title{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.footerHome .grid1 .section2 .info .social .title .text{
+    width: 100%;
+    height: auto;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5vw;
+}
+
+.footerHome .grid1 .section2 .info .social .title .text p{
+    width: 100%;
+    height: auto;
+    font-size: 1.1vw;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.footerHome .grid1 .section2 .info .social .title .deco{
+    width: 100%;
+    height: 50%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+.footerHome .grid1 .section2 .info .social .title .deco span{
+    width: 70%;
+    height: 0.5vw;
+    border-radius: 5vw;
+    background: linear-gradient(to right, #e70590, #0786e1);
+}
+
+
+.footerHome .grid1 .section2 .info .social .container{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+
+.footerHome .grid1 .section2 .info .social .container .cardSocial{
+    width: 10%;
+    height: 4vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.footerHome .grid1 .section2 .info .social .conatiner .cardSocial svg {
+    font-size: 1.2vw;
+}
+
+

@@ -5,7 +5,8 @@
 const installs = {
     proyect: {
         react_vite: {
-            install: 'npx create-vite nombre-de-tu-app',
+            install: 'npm install vite', //puedes quitarle '-g' para que no se instale de forma global
+            create: 'npx create-vite nombre-de-tu-app',
             view_pc: {
                 exec: 'npm run dev',
                 acess_local: 'http://localhost:5173/',
