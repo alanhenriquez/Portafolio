@@ -12,8 +12,8 @@ const FOOTER = () => {
 
 
     const social = [
-        { key: 1, tootip: 'Instagram', icon: (<Instagram></Instagram>), link: '#proyects' },
-        { key: 2, tootip: 'Linkedin', icon: (<LinkedIn></LinkedIn>), link: 'https://mui.com/material-ui/material-icons/' },
+        { key: 1, tootip: 'Instagram', icon: (<Instagram></Instagram>), link: 'https://www.instagram.com/alanhenriquez/' },
+        { key: 2, tootip: 'Linkedin', icon: (<LinkedIn></LinkedIn>), link: 'https://www.linkedin.com/in/alan-derek-henr%C3%ADquez-monterrosa-897123214/' },
     ]
 
     const contacto = [
@@ -96,7 +96,7 @@ const FOOTER = () => {
                                                         social.map((item) => (
                                                             <div className="cardSocial">
                                                                 <Tooltip title={item.tootip}>
-                                                                    <Link to={item.link}>
+                                                                    <Link to={item.link} target={'_blanc'}>
                                                                         <IconButton>{item.icon}</IconButton>
                                                                     </Link>
                                                                 </Tooltip>

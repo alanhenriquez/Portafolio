@@ -1,9 +1,9 @@
 
 
-const Frag = {
+const fragments = {
     Sections: {},
     Blocks: {},
     Items: {}
 }
 
-export default Frag;
+export default fragments;
