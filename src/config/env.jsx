@@ -51,7 +51,7 @@ const env = {
                 },
                 {
                     key: '4',
-                    href: '#',
+                    href: '#interest',
                     title: 'INTERESES',
                 },
                 {

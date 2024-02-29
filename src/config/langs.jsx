@@ -99,6 +99,11 @@ const langs = [
     en: "SOCIAL NETWORKS",
     fr: "RÉSEAUX SOCIAUX"
   },
+  {
+    key: 20,
+    es: "MI PORTAFOLIO",
+    en: "MY PORTFOLIO",
+  },
 ]
 
 export default langs;

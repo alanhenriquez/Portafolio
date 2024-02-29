@@ -385,6 +385,10 @@ body {
     transition: 0.2s;
   }
 
+  .theme-light  .btv1 > button svg{
+    color: var(--color-1);
+  }
+
   .theme-light  .btv1 > button:active {
     transform: scale(0.95);
     transition: 0.2s;
@@ -551,6 +555,10 @@ body {
     background: var(--bg-light-special3);
     transition: 0.2s;
     cursor: pointer;
+  }
+
+  .theme-dark  .btv1 > button svg{
+    color: var(--color-0);
   }
 
   .theme-dark  .btv1 > button:active {

@@ -30,7 +30,7 @@ const BANNER = ({ }) => {
                                 </div>
                                 <div className="s1Cards button">
                                     <div className="container off">
-                                        <Link to='#proyects'>
+                                        <a href='#footer'>
                                             <Button
                                                 variant="contained"
                                                 disableElevation
@@ -38,7 +38,7 @@ const BANNER = ({ }) => {
                                             >
                                                 CONTACTAME
                                             </Button>
-                                        </Link>
+                                        </a>
                                     </div>
                                 </div>
                             </Stack>
