@@ -58,7 +58,7 @@ const PreviewPDF = ({
     return (
         <div style={cssContainer}>
             {previewUrl && (
-                <embed
+                <iframe
                     src={previewUrl}
                     type={fileType}
                     width="600"

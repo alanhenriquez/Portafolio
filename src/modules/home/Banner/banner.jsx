@@ -2,7 +2,6 @@
 import { Button, Grid, Stack } from '@mui/material';
 import './banner.css';
 import { SouthEast } from '@mui/icons-material';
-import Link from '../../../components/Link/Link';
 
 
 

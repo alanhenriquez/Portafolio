@@ -1,11 +1,14 @@
-
-
 .sectionsHome {
-    width: 100vw;
-    height: auto;
-    position: relative;
-    background: transparent;
-    padding: 0em 5%;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  background: transparent;
+  padding: 0em 5%;
 }
 
-
+.parallax-container {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+}

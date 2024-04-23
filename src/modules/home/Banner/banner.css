@@ -67,6 +67,7 @@
     width: 30vw;
     height: 40vw;
     position: relative;
+    transform: scale(0.8);
 }
 
 .bannerHome .grid1 .section2 .s2Cards .conatiner1{
