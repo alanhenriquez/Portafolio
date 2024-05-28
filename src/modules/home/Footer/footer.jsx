@@ -1,6 +1,6 @@
 import { Grid, IconButton, Stack, Typography } from '@mui/material';
 import './footer.css';
-import { Email, Instagram, LinkedIn, LocationOn, Phone } from '@mui/icons-material';
+import { Email, GitHub, Instagram, LinkedIn, LocationOn, Phone } from '@mui/icons-material';
 import { Tooltip } from 'antd';
 import Link from '../../../components/Link/Link';
 import Image from '../../../components/Image/Image';
@@ -14,6 +14,7 @@ const FOOTER = () => {
     const social = [
         { key: 1, tootip: 'Instagram', icon: (<Instagram></Instagram>), link: 'https://www.instagram.com/alanhenriquez/' },
         { key: 2, tootip: 'Linkedin', icon: (<LinkedIn></LinkedIn>), link: 'https://www.linkedin.com/in/alan-derek-henr%C3%ADquez-monterrosa-897123214/' },
+        { key: 3, tootip: 'GitHub', icon: (<GitHub></GitHub>), link: 'https://github.com/alanhenriquez' },
     ]
 
     const contacto = [

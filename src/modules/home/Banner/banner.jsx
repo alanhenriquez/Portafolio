@@ -47,7 +47,7 @@ const BANNER = ({ }) => {
                         <div className="section2">
                             <div className="s2Cards">
                                 <div className="conatiner1">
-                                    <img src='/src/images/IMG_20221227_172311120.jpg'></img>
+                                    <img src='https://bucket.alanderek.com/portafolio/portada_perfil.jpg'></img>
                                 </div>
                                 <div className="conatiner2">
                                     <img src='/src/images/piqsels.com-id-fvkkl.jpg'></img>

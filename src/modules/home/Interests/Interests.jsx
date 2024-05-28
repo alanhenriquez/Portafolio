@@ -45,7 +45,7 @@ const INTERESTS = () => {
                                                 >
                                                     DESCARGAR
                                                 </Button>
-                                                <Link to='/src/documents/Alan Henriquez.pdf' download target={'_blank'} executeClick={ExecuteClick}></Link>
+                                                <Link to='https://bucket.alanderek.com/portafolio/docs/Alan%20Henr%C3%ADquez.pdf' download target={'_blank'} executeClick={ExecuteClick}></Link>
                                             </div>
                                         }
                                     />
@@ -55,7 +55,7 @@ const INTERESTS = () => {
                     </Grid>
                     <Grid style={{ display: 'grid', placeItems: 'center' }} item xs={12 / 2} md={12 / 2}>
                         <div className="documento">
-                            <PreviewPDF cssPreview={{height: '80vh', width: '35vw'}} pdfFileUrl={'/src/documents/Alan Henriquez.pdf'} />
+                            <PreviewPDF cssPreview={{height: '80vh', width: '35vw'}} pdfFileUrl={'https://bucket.alanderek.com/portafolio/docs/Alan%20Henr%C3%ADquez.pdf'} />
                         </div>
                     </Grid>
                 </Grid>

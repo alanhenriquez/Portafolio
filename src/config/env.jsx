@@ -62,7 +62,7 @@ const env = {
             ],
         },
         img: {
-            userImg: '/src/images/IMG_20221227_172311120.jpg',
+            userImg: 'https://bucket.alanderek.com/portafolio/portada_perfil.jpg',
             prWeb: [
                 /* vaidbit */
                 {

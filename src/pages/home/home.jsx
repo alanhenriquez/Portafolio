@@ -11,7 +11,7 @@ import './home.css';
 
 
 const HOME = ({ }) => {
-    const { addStyle, removeStyle } = useStyler({
+    /* const { addStyle, removeStyle } = useStyler({
         '.myClass': {
             width: '100px',
             height: '100px',
@@ -35,7 +35,7 @@ const HOME = ({ }) => {
             fontSize: '18px !important',
             fontWeight: 'bold',
         }
-    }, '/src/modules/home/Footer/footer.css');
+    }, '/src/modules/home/Footer/footer.css'); */
 
 
 
